@@ -1,5 +1,3 @@
-# ELI_5
-An end to end GenAI app powered by Groq and LangChain. Simplifies complex topics into ''Explain Like I'm 5'' summaries using Chain of Thought prompting. Features a Streamlit UI for instant, structured explanations with analogies and quizzes.
 
 # 🧠 Explain It Like I'm 5 (ELI5)
 
@@ -8,7 +6,9 @@ An end to end GenAI app powered by Groq and LangChain. Simplifies complex topics
 ![Groq](https://img.shields.io/badge/AI-Groq%20LPU-orange)
 ![LangChain](https://img.shields.io/badge/Orchestration-LangChain-green)
 
-An end-to-end GenAI application that takes complex topics and explains them in two distinct ways: **Technically** (for pros) and **Simply** (for a 5-year-old).
+ 
+An end to end GenAI app powered by Groq and LangChain. Simplifies complex topics into ''Explain Like I'm 5'' summaries using Chain of Thought prompting. Features a Streamlit UI for instant, structured explanations with analogies and quizzes.
+It takes complex topics and explains them in two distinct ways: **Technically** (for pros) and **Simply** (for a 5-year-old).
 
 **[👉 Click Here to Try the Live App](https://YOUR-APP-URL.streamlit.app)**
 
