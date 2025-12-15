@@ -4,18 +4,18 @@ from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
-# 1. Force Load .env file
-# find_dotenv() searches for the file to make sure we don't miss it
+#Force Load .env File
+
 dotenv_path = find_dotenv()
 if not dotenv_path:
     print("⚠️ WARNING: Could not find .env file!")
 else:
     load_dotenv(dotenv_path)
 
-# 2. Get the Key
+# Get the Key
 api_key = os.getenv("GROQ_API_KEY")
 
-# --- 🔍 DEBUG CHECK (Crucial) ---
+# DEBUG CHECK 
 if not api_key:
     print("❌ CRITICAL ERROR: GROQ_API_KEY is missing or empty.")
     print(f"   Searching in: {os.getcwd()}")
@@ -29,21 +29,20 @@ def generate_explanation(topic):
     Returns BOTH a professional explanation and an ELI5 explanation.
     """
     
-    # 3. Setup the Brain
-    # We use 'groq_api_key' (specific param) instead of 'api_key' to be safe
+    #The LLM Setup
     llm = ChatGroq(
         groq_api_key=api_key, 
         model="llama-3.3-70b-versatile",
         temperature=0.3
     )
 
-    # 4. The System Prompt
+    # System Prompt
     system_instruction = """
     You are a versatile AI teacher. You must explain the user's topic in TWO different ways.
     
     OUTPUT FORMAT (Use these exact Markdown headers):
 
-    # 🧐 The Technical Explanation
+    # The Technical Explanation
     (Explain the topic accurately and concisely, suitable for a high school student or adult. Use proper terminology.)
 
     ---
@@ -67,6 +66,6 @@ def generate_explanation(topic):
 
 # --- TEST AREA ---
 if __name__ == "__main__":
-    print("🧪 Starting Test...")
+    print(" Starting Test...")
     test_topic = "Photosynthesis"
     print(generate_explanation(test_topic))
