@@ -8,7 +8,7 @@ An end to end GenAI app powered by Groq and LangChain. Simplifies complex topics
 ![Groq](https://img.shields.io/badge/AI-Groq%20LPU-orange)
 ![LangChain](https://img.shields.io/badge/Orchestration-LangChain-green)
 
-An end-to-end GenAI application that takes complex topics and explains them in two distinct ways: **Professionally** (for your boss) and **Simply** (for a 5-year-old).
+An end-to-end GenAI application that takes complex topics and explains them in two distinct ways: **Technically** (for pros) and **Simply** (for a 5-year-old).
 
 **[👉 Click Here to Try the Live App](https://YOUR-APP-URL.streamlit.app)**
 
